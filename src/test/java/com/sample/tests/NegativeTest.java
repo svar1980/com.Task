@@ -29,7 +29,7 @@ public class NegativeTest extends TestBase {
 
         ConfirmationDialog confirmationDialog = new ConfirmationDialog(this.driver);
 
-        String text = confirmationDialog.getConformationText();
+        String text = confirmationDialog.getConfirmationText();
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(text,  "Missing phone number");

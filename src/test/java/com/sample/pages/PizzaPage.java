@@ -66,7 +66,7 @@ public class PizzaPage {
 
 
     public void setPizza1Type(PizzaTypes type){
-        logger.info(type);
+        logger.info("setPizza1Type" + type);
         pizza1.sendKeys(type.getDisplayName());
     }
 
@@ -76,10 +76,12 @@ public class PizzaPage {
     }
 
     public void setToppings1Type(PizzaToppings type){
+        logger.info("setToppings1Type" + type);
         pizza1Toppings1.sendKeys(type.getDisplayName());
     }
 
     public void setToppings2Type(PizzaToppings type){
+        logger.info("pizza1Toppings2" + type);
         pizza1Toppings2.sendKeys(type.getDisplayName());
     }
 
@@ -98,22 +100,27 @@ public class PizzaPage {
     }
 
     public void setCustomerName(String value){
+        logger.info("setCustomerName " + value);
         name.sendKeys(value);
     }
 
     public void setCustomerEmail(String value){
+        logger.info("setCustomerEmail " + value);
         email.sendKeys(value);
     }
 
     public void setCustomerPhone(String value){
+        logger.info("setCustomerPhone " + value);
         phone.sendKeys(value);
     }
 
     public void placeOrder(){
+        logger.info("placeOrder");
         placeOrderButton.click();
     }
 
     public void setCardPayment(){
+        logger.info("setCardPayment");
         cardPayment.click();
     }
 

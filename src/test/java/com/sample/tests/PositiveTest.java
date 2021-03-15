@@ -5,7 +5,6 @@ import com.sample.pages.PizzaPage;
 import com.sample.test.demo.TestBase;
 import com.sample.test.demo.constants.PizzaToppings;
 import com.sample.test.demo.constants.PizzaTypes;
-import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -45,7 +44,7 @@ public class PositiveTest extends TestBase {
 
         ConfirmationDialog confirmationDialog = new ConfirmationDialog(this.driver);
 
-        String text = confirmationDialog.getConformationText();
+        String text = confirmationDialog.getConfirmationText();
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(cost,  pizzaCost);
