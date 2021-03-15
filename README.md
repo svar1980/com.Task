@@ -46,6 +46,5 @@ We will be evaluating
 5. When complete please check your code into your public git repo
 
 #### Test Cases
-
- 1.  
+Please take a look Task.docx for test cases. Thank you
 
